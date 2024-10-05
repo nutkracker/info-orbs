@@ -12,7 +12,6 @@
 #include <config.h>
 #include <widgets/stockWidget.h>
 #include <widgets/mqttWidget.h>   // MQTT
-#include <widgets/XmasWidget.h>   // Xmas
 
 TFT_eSPI tft = TFT_eSPI();
 
@@ -109,10 +108,6 @@ void setup() {
   // Instantiate MQTTWidget with host and port from config.h
   mqttWidgetInstance = new MQTTWidget(*sm, MQTT_WIDGET_HOST, MQTT_WIDGET_PORT);
   widgetSet->add(mqttWidgetInstance);
-#endif
-
-#ifdef MQTT_WIDGET_HOST
-  widgetSet->add(new XmasWidget(*sm));
 #endif
 
 }
