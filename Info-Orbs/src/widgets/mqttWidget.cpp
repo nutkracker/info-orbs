@@ -360,8 +360,6 @@ void MQTTWidget::drawOrb(int orbid) {
     // Clear the display area with the background color
     display.fillRect(x, y, width, height, orb->orbBgColor);
 
-    display.setTextFont(2); //larger font
-
     // Set text properties
     display.setTextColor(orb->orbTextColor, orb->orbBgColor);
     display.setTextSize(orb->orbsize);
