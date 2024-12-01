@@ -3,7 +3,7 @@
 
 Info Orbs is a desk display widget built on top of an ESP32 with the intention of creating a large library of widgets/functionality!
 
-Quick Links: [Get A Dev Kit Here](https://brett.tech/collections/electronics-projects/products/info-orbs-full-dev-kit) | [Discord](https://discord.gg/xZhYuQ9y64) | [Youtube Assembly/Flashing Video](https://link.brett.tech/orbsYT) 
+Quick Links: [Get A Dev Kit Here](https://brett.tech/collections/electronics-projects/products/info-orbs-full-dev-kit) | [Discord](https://link.brett.tech/discord) | [Youtube Assembly/Flashing Video](https://link.brett.tech/orbsYT) 
 <p>
     <img src="references/weather.png" alt="Weather Widget" style="width:30%;">
     <img src="references/time.png" alt="Clock Widget" style="width: 30%;">
@@ -42,9 +42,9 @@ Diagram can be seen below:
 
 ### 2. Dev Environment Setup/Project Config
 **IDE Setup**
-Start by downloading the most recent codebase from the `main` branch.
+Start by downloading the most recent codebase from the `dev` branch.
 While built on Arduino, the codebase for this project has been built using the  [Platform IO IDE](https://platformio.org/), which allows you to compile/run Arduino code in VSC as well as quite a few other creature comfort items.
-Once you have platform.io installed and configured in VSC, you'll want to select "Open Project", and select & open the main "Info-Orbs" directory from the codebase you downloaded.
+Once you have platform.io installed and configured in VSC, you'll want to select "Open Project", and select & open the main directory from the codebase you downloaded.
 
 **Project Configuration**
 Before compiling/flashing, you'll need to navigate into `Info-Orbs` >>` lib `>> `config` directory and make a copy of the file `config.h.template` in the same folder and rename that copy to `config.h` **THIS STEP IS CRITICAL AND YOUR CODE WILL NOT COMPILE IF YOU DONT COPY THIS FILE AND CHANGE THE NAME**
